@@ -16,6 +16,9 @@ pipeline{
                 echo "Building"
                 set PATH=%PYTHON_PATH%;%PATH%
                 pip install -r requirements.txt
+                pip install coverage
+                coverage run -m unittest discover
+                coverage xml -o coverage.xml
                 '''
             }
         }
