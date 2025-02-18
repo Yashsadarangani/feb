@@ -27,6 +27,7 @@ pipeline{
                 -Dsonar.projectKey=feb ^
                 -Dsonar.sources=. ^
                 -Dsonar.host.url=http://localhost:9000 ^
+                -Dsonar.python.coverage.reportPaths=coverage.xml ^
                 -Dsonar.token=sqp_c1fb379d14655c1c1c24cba97d75cbd14b4b12b1
                 '''
             }
